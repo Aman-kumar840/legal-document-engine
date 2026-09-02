@@ -12,8 +12,8 @@ app = FastAPI(title="Legal Document Engine API")
 # Allow frontend applications to talk to this backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, restrict this to your frontend URL
-    allow_credentials=True,
+    allow_origins=["*"], 
+    allow_credentials=False, 
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -207,6 +207,16 @@ cd legal-document-engine
 
 Create and activate a virtual environment.
 
+### To Run Backend Folder
+
+## Step 1: Activate the virtual environment
+
+source venv/bin/activate
+
+## Step 2: Start the server
+
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 --env-file .env
+
 #### Linux / MacOS
 
 ```bash

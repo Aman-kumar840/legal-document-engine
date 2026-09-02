@@ -5,10 +5,10 @@ from typing_extensions import TypedDict
 from langgraph.graph import StateGraph, START, END
 
 # Import your specialized agents
-from backend.app.agents.extractor import extract_clauses
-from backend.app.agents.scorer import score_clause_risk
-from backend.app.agents.comparator import compare_with_market_benchmarks
-from backend.app.agents.summarizer import generate_summary
+from app.agents.extractor import extract_clauses
+from app.agents.scorer import score_clause_risk
+from app.agents.comparator import compare_with_market_benchmarks
+from app.agents.summarizer import generate_summary
 
 # 1. Define the State Structure that flows between agents
 class State(TypedDict):

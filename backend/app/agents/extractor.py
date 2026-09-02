@@ -9,7 +9,7 @@ load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # The specific model we want to use (Llama 3 70B is incredibly smart for parsing)
-MODEL_NAME = "llama-3.3-70b-versatile"
+MODEL_NAME = "openai/gpt-oss-20b"
 
 def extract_clauses(text_chunk: str) -> list:
     """

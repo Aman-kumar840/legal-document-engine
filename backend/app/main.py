@@ -4,8 +4,8 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 # Import our custom modules
-from backend.app.utils.pdf_parser import extract_clean_text_from_pdf
-from backend.app.graph import app_graph
+from app.utils.pdf_parser import extract_clean_text_from_pdf
+from app.graph import app_graph
 
 app = FastAPI(title="Legal Document Engine API")
 

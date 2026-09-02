@@ -14,7 +14,7 @@ client_qdrant = QdrantClient(url=os.getenv("QDRANT_URL"), api_key=os.getenv("QDR
 # Use the exact same encoder model used during seeding
 encoder = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
-MODEL_NAME = "llama-3.3-70b-versatile"
+MODEL_NAME = "openai/gpt-oss-20b"
 COLLECTION_NAME = "legal_clauses"
 
 def compare_with_market_benchmarks(clause_text: str, clause_type: str) -> dict:

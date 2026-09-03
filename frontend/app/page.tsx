@@ -28,7 +28,8 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/audit", {
+      const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://legal-document-engine.onrender.com";
+      const response = await fetch(`${API_BASE}/api/audit`, {
         method: "POST",
         body: formData,
       });
